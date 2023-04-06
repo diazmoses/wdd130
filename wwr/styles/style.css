@@ -312,11 +312,6 @@ footer .social img {
     width: 120%;
 }
 
-.faq-img:hover {
-    opacity: .8;
-    transform: scale(1.1);
-}
-
 .rafting-card {
     margin: 200px 0;
     grid-column: 8/10;
