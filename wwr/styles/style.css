@@ -237,3 +237,34 @@ footer .social img {
         margin-top: 25px;
     }
 }
+.faq-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.rafting-card, .group-card, .kayak-card{
+    margin: 50px auto;
+    width: 60%;
+}
+.rafting-card{
+    margin: 200px 0;
+    grid-column: 8/10;
+    grid-row: 1/2;
+}
+.group-card{
+    margin: 200px 0;
+    grid-column: 8/10;
+    grid-row: 2/4;
+}
+.kayak-card{
+    margin: 200px 0;
+    grid-column: 8/10;
+    grid-row: 4/6;
+}
+.faq{
+        background-color: #bfedef;
+        line-height: 1.5em;
+        padding: 35px;
+        grid-column: 1/8;
+        grid-row: 1/6;
+        box-shadow: 5px 5px 10px #6f7364;
+}
