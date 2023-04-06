@@ -10,6 +10,7 @@ nav {
 }
 nav a {
     text-align: center;
+    background-color: #234d6b;
     color: #bfedef;
     text-decoration: none;
     padding: 35px;
@@ -236,35 +237,41 @@ footer .social img {
     footer {
         margin-top: 25px;
     }
+    .faq{
+        font-size: 15px;
+    }
 }
 .faq-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-.rafting-card, .group-card, .kayak-card{
-    margin: 50px auto;
-    width: 60%;
+.faq-img{
+    box-shadow: 4px #6f7364;
+    width: 120%;
+}
+.faq-img:hover{
+    opacity: .8;
+    transform: scale(1.1);
 }
 .rafting-card{
     margin: 200px 0;
     grid-column: 8/10;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 .group-card{
     margin: 200px 0;
     grid-column: 8/10;
-    grid-row: 2/4;
+    grid-row: 3/4;
 }
 .kayak-card{
     margin: 200px 0;
     grid-column: 8/10;
-    grid-row: 4/6;
+    grid-row: 4/5;
 }
 .faq{
-        background-color: #bfedef;
+        color: #bfedef;
         line-height: 1.5em;
         padding: 35px;
         grid-column: 1/8;
         grid-row: 1/6;
-        box-shadow: 5px 5px 10px #6f7364;
 }
