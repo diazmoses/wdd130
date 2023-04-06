@@ -246,7 +246,7 @@ footer .social img {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .faq-img{
-    box-shadow: 4px #6f7364;
+    box-shadow: 5px 5px 5px 5px #a4a996;
     width: 120%;
 }
 .faq-img:hover{
