@@ -23,37 +23,37 @@
         </header>
         <main>
             <div id="background"></div>
-            <h2 class="contactheadline">"Everyone is your best friend when you are successful. Make sure that the people that you surround yourself with
-                are also the people that you are not afraid of failing with." - Paula Abdul</h2>
-            <h3>Contact</h3>
-            <p>
-                If you would like to get in contact me to discuss work opportunities, feel free to fill out the form
-                below, reach out to me on linkedIn, or
-                email
-                me at mosesdiaz@outlook.com
-            </p>
-            <div id="contact"></div>
-            <form action="/my-handling-form-page" method="post">
-                <ul>
-                    <li>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name" />
-                    </li>
-                    <li>
-                        <label for="mail">Email:</label>
-                        <input type="email" id="mail" name="user_email" />
-                    </li>
-                    <li>
-                        <label for="msg">Message:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                </ul>
-                <button type="submit">Send</button>
-            </form>
+            <h1>"Everyone is your best friend when you are successful. Make sure that the people
+                that you surround yourself with
+                are also the people that you are not afraid of failing with." - Paula Abdul</h1>
+            <h2>Contact</h2>
+            <section class="contact">
+                <p>
+                    If you would like to get in contact me to discuss work opportunities, feel free to fill out the form
+                    below, reach out to me on linkedIn, or
+                    email
+                    me at mosesdiaz@outlook.com
+                </p>
+            </section>
+            <br>
+
+            <div class="container" id="contact">
+                <form action="/my-handling-form-page" method="post">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <br>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <br>
+                    <textarea id="subject" name="subject" placeholder="Message: " style="height:300px"></textarea>
+                    <br>
+                    <input type="submit" value="Send Message">
+
+                </form>
+            </div>
             <div class="contactImages">
-                <img src="images/IMG_0190.JPG" alt="statueOfLiberty">
-                <img src="images/linkedinLogo.png" alt="linkedIn">
-                <img src="images/githubLogo.png" alt="github">
+                <p><a href="https://www.linkedin.com/in/moses-diaz/"><img src="images/linkedinLogo.png"
+                            style="width:150px;height:150px;" alt="linkedin"></a></p>
+                <p><a href="https://github.com/diazmoses"><img src="images/github.png" style="width:150px;height:150px;"
+                            alt="github"></a></p>
             </div>
         </main>
         <footer>
@@ -64,6 +64,23 @@
             <p>&copy; 2023 - Moses Diaz</p>
         </footer>
     </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('contact');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.name.value +'! Thank you for reaching out, I will be in contact as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 
 </html>

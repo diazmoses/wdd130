@@ -116,3 +116,81 @@ body {
     align-items: center;
     justify-items: center;
 }
+
+.contact {
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text],
+select,
+textarea {
+    background-color: #27383F;
+    color: #d5dad2;
+    width: 75%;
+    /* Full width */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 5px;
+    /* Rounded borders */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    justify-content: center;
+    align-items: center;
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+#container {
+    background-color: #27383F;
+    display: grid;
+    grid-template-columns: 100px auto;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 22px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #27383F;
+    color: #d5dad2;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #4f0403;
+}
+
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font-family: 'Red Hat Display', sans-serif;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+
+.contactImages {
+    display: grid;
+    grid-template-columns: 50px auto;
+    margin-top: 100px;
+}
+
+.linkedIn {
+    max-width: 50%;
+
+}
+
+.github {
+    max-width: 50%;
+}
