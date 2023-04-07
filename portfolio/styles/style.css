@@ -174,7 +174,7 @@ input,
 textarea {
     /* To make sure that all text fields have the same font settings
        By default, textareas have a monospace font */
-       font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
     /* Match form field borders */
     border: 1px solid #999;
@@ -194,27 +194,84 @@ textarea {
 .github {
     max-width: 50%;
 }
-.resume{
+
+.resume {
     padding: 20px;
     font-size: 16px;
     letter-spacing: 2px;
 }
-.missionStatement{
+
+.missionStatement {
     text-align: center;
 }
-.headline{
+
+.headline {
     font-weight: bold;
 }
-.resume ul{
+
+.resume ul {
     text-align: left;
     text-indent: 25px;
 }
-.resume h4{
+
+.resume h4 {
     font-family: 'Roboto', sans-serif;
     text-align: left;
     padding-top: 5px;
     font-size: 20px;
 }
-.resume h3{
+
+.resume h3 {
     font-size: 25px;
+}
+
+.resumeImage {
+    max-width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+@media screen and (max-width: 900px) {
+
+
+    header,
+    footer {
+        font-size: 25px;
+    }
+
+    .homeImages,
+    .resumeImage,
+    .contactImages {
+        width: 70%;
+        display:block;
+        margin: 0 auto;
+    }
+
+    #background {
+        display: none;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+
+    nav,
+    footer {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: large;
+    }
+
+    p {
+        font-size: medium;
+    }
 }
