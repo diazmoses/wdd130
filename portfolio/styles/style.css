@@ -174,7 +174,7 @@ input,
 textarea {
     /* To make sure that all text fields have the same font settings
        By default, textareas have a monospace font */
-    font-family: 'Red Hat Display', sans-serif;
+       font-family: 'Roboto', sans-serif;
 
     /* Match form field borders */
     border: 1px solid #999;
@@ -193,4 +193,28 @@ textarea {
 
 .github {
     max-width: 50%;
+}
+.resume{
+    padding: 20px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.missionStatement{
+    text-align: center;
+}
+.headline{
+    font-weight: bold;
+}
+.resume ul{
+    text-align: left;
+    text-indent: 25px;
+}
+.resume h4{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    padding-top: 5px;
+    font-size: 20px;
+}
+.resume h3{
+    font-size: 25px;
 }
